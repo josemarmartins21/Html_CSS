@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/*Regra @charset caso haja problemas com acentuação*/
+ /*body{
+    background-image: linear-gradient(to right, #DE9414, #DEAD14, #DE5214,#DEAD14);
+    main{
+
+        background-color: aliceblue;
+        border-radius: 10px;
+        box-shadow: 20px spx 15px rgba(136, 109, 93, 0);
+        width: 600px;
+        padding: 10px;
+        margin: auto;
+    }
+ }
+    h1{
+        color: #DEAD14;
+    }
+    p {text-align: justify
+}*/
+body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(#FA360F);
+            color: rgba(#677A45);
+
+}
+h1{
+
+    font-family: 'Times New Roman', Times, serif;
+    color: bisque;
+}
+
+
