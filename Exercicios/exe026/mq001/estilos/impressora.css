@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+/*Estilo para impressoras*/
+
+* {
+    margin: 10px;
+    padding: 10px;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1em;
+}
+/*Faz com que o menu não apareça para impressoras*/
+menu {
+    display: none;
+}
+/*Pseudo classe que adiciona um conteudo depois de um elemento || box*/
+article::after {
+    content: 'Este artigo foi impresso atravez do site www.cursoemvideo.com';
+}
+
+article {
+    width: 100%;
+}
