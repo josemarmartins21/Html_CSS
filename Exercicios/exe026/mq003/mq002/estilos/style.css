@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/*declarações gerais*/
+    @media all {
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-color: #233eff;
+            background-size: contain;
+            background-repeat: no-repeat;
+    
+        }
+
+
+    }
+
+    /*declarações de retrato*/
+    @media screen and (orientation: portrait) {
+        body {
+            background-image: url(../image/cev-portrait.jpg);
+            background-position: center bottom;
+            
+        }
+    }
+
+    /*Declaração de paisagem*/
+    @media screen and (orientation: landscape) {      
+        body {
+            background-image: url(../image/cev-landscape.jpg);
+            background-position: left bottom;
+        }
+    }
