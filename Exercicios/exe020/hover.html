@@ -9,29 +9,19 @@
     body{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
-    div > p{
+
+    div > p {
         display: none;
     }
-    div:hover > p{
+
+    div:hover {
+        color: red;
+    }
+
+    div:hover > p {
         display: block;
         color: white;
         background-color: red;
-        width: 300px;
-    }
-    div:hover{
-        color: red;
-    }
-    div#p > p{
-        display: none;
-    }
-    div#p:hover p{
-        display: block;
-        color: aliceblue;
-        background-color: black;
-    }
-    div#p:hover{
-        color: rgb(228, 132, 15);
-
     }
 
 
@@ -40,12 +30,13 @@
     <h1>Exemplo de hover</h1>
     <p>Passe o mouse sobre o texto a abaixo</p>
     <div>Passe o mouse aqui
-        <p>Texto escondido</p>
+     <p>Texto escondido</p>
     </div>
     <p>Fim do exemplo</p>
-
+ <!--  
     <div id="p">Passe o mouse
         <p>Ola, mundo!</p>
     </div>
+    -->
 </body>
 </html>
