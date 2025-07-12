@@ -4,7 +4,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Mulish';
+    font-family: 'Mulish', Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -53,9 +53,9 @@ div#hero  {
 }
 
 /*Secção nossos jogos*/
-section#jogos > h1 {
+h1.titulo {
     text-align: center;
-    padding: 20px;
+    padding: 40px;
     font-size: 3em;
     font-weight: 700;
 }
@@ -72,9 +72,20 @@ div.jogo {
     margin: 10px;
     padding: 10px;
     flex-basis: 450px;
-    flex-grow: 0;
+    flex-grow: 2;
     
 }
+
+div.jogo:last-child {
+    flex-grow: 0;
+    flex-basis: 800px;
+    text-align: left;
+}
+
+div.jogo:last-child > p {
+    text-align: justify;
+}
+
 
 div.jogo:hover {
     outline: 1px solid black;
@@ -93,4 +104,68 @@ div.jogo > p {
     text-align: center;
     line-height: 1.5em;
 
+}
+
+/*Secção consoles do XBOX*/
+section#consoles-xbox {
+    padding: 30px;
+}
+
+
+div#consoles {
+    display: flex;
+    height: 1750px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+img.pequena-c {
+    display: block;
+    width: 100%;
+    
+}
+
+div.console {
+    flex-basis: 500px;
+    flex-shrink: 1;
+   
+}
+
+div#c2 {
+    align-self: center;
+}
+
+div#c4 {
+    align-self: flex-end;
+}
+
+
+
+div#c2 > h2 {
+    text-align: center;
+}
+
+
+/*Secção de nossos serviços*/
+
+main >  #nossos-servicos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    height: 1000px;
+}
+
+div.servicos {
+    width: 500px;
+
+}
+
+#servc {
+    align-self: flex-end;
+}
+
+div.servicos > div.img > img {
+    display: block;
+    width: 100%;
+    
 }
