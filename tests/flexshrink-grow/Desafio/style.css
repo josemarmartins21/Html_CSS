@@ -149,20 +149,22 @@ div#c2 > h2 {
 /*Secção de nossos serviços*/
 
 main >  #nossos-servicos {
+    background-color: rgba(0, 0, 0, 0.158);
     display: flex;
+    padding: 20px;
     flex-flow: row wrap;
-    justify-content: space-around;
-    height: 1000px;
+    justify-content: space-between;
+    align-items: flex-start;
+    
 }
 
 div.servicos {
     width: 500px;
+    align-self: center;
 
 }
 
-#servc {
-    align-self: flex-end;
-}
+
 
 div.servicos > div.img > img {
     display: block;
