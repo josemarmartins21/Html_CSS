@@ -16,6 +16,7 @@ header {
 }
 
 
+
 nav#menu {
     align-self: flex-end;
     padding-bottom: 10px;
@@ -124,47 +125,52 @@ div.jogo > p {
 section#consoles-xbox {
     padding: 30px;
 }
-
-
-div#consoles {
+.console {
     display: flex;
-    height: 1750px;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: flex-start;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+
+div#c2 div.img {
+    order: 1;
+}
+
+div#c4  div.img {
+    order: 1;
+}
+
+.console > .details, .console > .img {
+    flex: 0 1 500px;
+}
+
+.console > .details > p {
+    text-align: left;
+    line-height: 1.8em;
+}
+
+.console > .details > h3 {
+    font-weight: 900;
+    font-size: 2.5em;
+    padding: 10px;
+}
+
+.console > .details {
+    align-self: center;
 }
 
 img.pequena-c {
     display: block;
     width: 100%;
-    
 }
 
-div.console {
-    flex-basis: 500px;
-    flex-shrink: 1;
-    transition: .4s;
-   
+img.pequena-c:hover {
+    transform: translate(-3px, -20px);
+    transition: transform .3s;
+
 }
 
-div.console:hover {
-    transform: translate(5px, -10px);
-    cursor: pointer;
-}
-
-div#c2 {
-    align-self: center;
-}
-
-div#c4 {
-    align-self: flex-end;
-}
-
-
-
-div#c2 > h2 {
-    text-align: center;
-}
 
 
 /*Secção de nossos serviços*/
@@ -174,7 +180,7 @@ main >  #nossos-servicos {
     display: flex;
     padding: 20px;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
     
 }
@@ -191,4 +197,14 @@ div.servicos > div.img > img {
     display: block;
     width: 100%;
     
+}
+
+/*Footer*/
+
+footer  {
+    padding: 20px;
+}
+
+footer > p {
+    text-align: center;
 }
