@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout na prática</title>
+</head>
+    <style> 
+        .container {
+            border: 3px solid black;
+            padding: 15px;
+            display: grid;
+            grid-template: repeat(2, 250px) / repeat(2, auto);
+            gap: 10px;
+
+            grid-auto-rows: 250px;
+            place-content:  start space-evenly;
+        }
+
+        .img {
+            border: 2px solid gray;
+        }
+
+        img {
+            display: block;
+            min-width: 100%;
+            max-height: 100%;
+        }
+    
+    </style>
+<body>
+    <div class="container">
+        <div class="img"><img src="img/josimar.jpg" alt="josimar"></div>
+        <div class="img"><img src="img/Pink-Floyd-Credit-Hipgnosis-Pink-Floyd-Music-Ltd.-P82F7-Pink-Floyd-Music-Ltd-1-1280x771.jpeg" alt="Pink-Floyd-"></div>
+        <div class="img"><img src="img/The Witcher 3_ Wild Hunt _ PS5 60FPS HDR _  inicio da Gameplay  (Sonho Sombrio).jpeg" alt="cr7"></div>
+        <div class="img"><img src="img/zelda-breath-of-the-wild.jpg" alt="cr7"></div>
+        <div class="img"><img src="img/descarregar.jpeg" alt="cr7"></div>
+        <div class="img"><img src="img/descarregar (1).jpeg" alt="cr7"></div>
+        <div class="img"><img src="img/descarregar (1).jpeg" alt="cr7"></div>
+    </div>
+</body>
+</html>
